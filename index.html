@@ -28,6 +28,10 @@
         .card.is-hidden{
             display: none;
         }
+        #selecteditems{
+            color: white;
+            font-size: 18px;
+        }
     </style>
 </head>
 
@@ -295,27 +299,41 @@
                                 <!-- Filter CheckBox -->
                               
                                 <div class="form-check" style="padding: 5px;">
-                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="business" id="hidediv"> Business</label>
+                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="business" id="hidediv"
+                                        data-valuetwo=" ...G7 finance ministers have agreed to work together to create a level playing field on global taxation..." 
+                                        > Business</label>
                                 </div>
                                 <div class="form-check" style="padding: 5px;">
-                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="politics"> Politics</label>
+                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="politics"
+                                        data-valuetwo="... Biden administration to do more to vaccinate detained immigrant ..." 
+                                        > Politics</label>
                                 </div>
                                 <div class="form-check" style="padding: 5px;">
-                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="technology"> Technology</label>
+                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="technology"
+                                        data-valuetwo=" Scammers are using an old trick to hijack WhatsApp accounts by posing as a friend " 
+                                        > Technology</label>
                                 </div>
                                 <div class="form-check" style="padding: 5px;">
-                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="entertainment">
+                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="entertainment"
+                                        data-valuetwo=" Stars get together in person for the most prestigious British ceremony in the industry's calendar Many TV " 
+                                        >
                                             Entertainment</label>
                                 </div>
                                 <div class="form-check" style="padding: 5px;">
-                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="covid-19"> Covid-19</label>
+                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="covid-19"
+                                        data-valuetwo=" Doctors urge acceleration of vaccinations for expectant women and children as Delta-fuelled " 
+                                        > Covid-19</label>
                                 </div>
                                 <div class="form-check" style="padding: 5px;">
-                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="sports" > Sports</label>
+                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="sports" 
+                                        data-valuetwo="England need 273 in a minimum of 75 overs to win the first Test " 
+                                        > Sports</label>
                                 </div>
                                 
                                 <!--End Checkbox Filter-->
                             </div>
+
+                            
                         </div>
 
 
@@ -351,20 +369,12 @@
     </div>
     <!-- News With Sidebar End -->
 
-    <div  style=" position: fixed; right: 0; bottom: 0; left: 0; z-index: 1030; background-color: crimson; flex-direction: row; padding-top: 10px;" > 
+    <div  style=" position: fixed; right: 0; bottom: 0; left: 0; z-index: 1030; background-color: crimson; flex-direction: row; padding-top: 10px; " > 
+        <div class="col-md-2 float-left" ><h3>Breaking News</h3></div>
         
-        <marquee direction="left" ><h2 style="color: white;">
-    Israel arrests Palestinian activist Muna el-Kurd in East Jerusalem
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    G7 finance ministers have agreed to work together to create a "level playing field" on global taxation.
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    Stars get together in person for the most prestigious British ceremony in the industry's calendar.
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    Scammers are using an old trick to hijack WhatsApp accounts by posing as a friend.
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    Federer could pull out of French Open
-
-</h2></marquee>
+       <div class="col-md-9 float-left"><marquee direction="left" ><div id="selecteditems">
+           <div class="scroll-que"> G7 finance ministers have agreed to work together to create a "level playing field" on global taxation</div>
+       </div></marquee></div> 
       </div>
       <!-- <div class="container-fluid mh-50" style="height: 60px;">
         <div class="row align-items-center bg-light px-lg-5" >
@@ -413,6 +423,27 @@
 
 
     <!-- JavaScript Libraries -->
+
+    <script>
+        $(document).ready(function () {
+            $('.chkbx').click(function () {
+                var selected = $('.chkbx:checked').map(function () {
+                    return $(this).attr('data-valuetwo');
+                }).get().join('&nbsp');
+                $('#selecteditems').html(selected);
+            });
+        });
+
+    </script>
+
+<script>
+    $(document).ready(function () {
+        $("#hidediv").click(function () {
+            $(".scroll-que").hide();
+        });
+    });
+
+</script>
    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
