@@ -23,6 +23,12 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .card.is-hidden{
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -131,214 +137,217 @@
     <!-- Category News Slider End -->
 
 
-    <!-- News With Sidebar Start -->
-    <div class="container-fluid py-3">
+
+
+
+    
+
+    <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="row mb-3">
-                        <div class="col-12">
-                            <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                                <h3 class="m-0">Latest News</h3>
-                                <!-- <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a> -->
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/New_Images/image_1.jpg" style="object-fit: cover;">
-                                <div class="overlay position-relative bg-light">
-                                    <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">Sports</a>
-                                        <span class="px-1">/</span>
-                                        <span>June 06, 2021</span>
-                                    </div>
-                                    <a class="h4" href="">Burns falls in England pursuit of 273 to win</a>
-                                    <p class="m-0">England need 273 in a minimum of 75 overs to win the first Test after New Zealand declare at lunch on the final day at Lord's.</p>
-                                </div>
-                            </div>
-
-                            <div class="d-flex mb-3">
-                                <img src="img/New_Images/image_3.jpg" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Sports</a>
-                                        <span class="px-1">/</span>
-                                        <span>June 06, 2021</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Federer could pull out of French Open</a>
-                                </div>
-                            </div>
-
-                            <div class="d-flex mb-3">
-                                <img src="img/New_Images/image_4.jpg" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Sports</a>
-                                        <span class="px-1">/</span>
-                                        <span>June 06, 2021</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Rahm withdraws from Memorial with Covid</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/New_Images/image_2.jpg" style="object-fit: cover;">
-                                <div class="overlay position-relative bg-light">
-                                    <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">Business</a>
-                                        <span class="px-1">/</span>
-                                        <span>June 06, 2021</span>
-                                    </div>
-                                    <a class="h4" href="">Tax deal sets bar too low, campaigners say</a>
-                                    <p class="m-0">G7 finance ministers have agreed to work together to create a "level playing field" on global taxation.</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                <img src="img/New_Images/image_5.jpg" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Business</a>
-                                        <span class="px-1">/</span>
-                                        <span>June 06, 2021</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Facebook suspends Trump accounts for two years</a>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                <img src="img/New_Images/image_6.jpg" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Business</a>
-                                        <span class="px-1">/</span>
-                                        <span>June 06, 2021</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">UK signs trade deal with Norway and Iceland</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- <div class="mb-3 pb-3">
-                        <a href=""><img class="img-fluid w-100" src="img/ads-700x70.jpg" alt=""></a>
-                    </div> -->
-                    
+                <div class="col-lg-10">
                     <div class="row">
-                        <!-- <div class="col-12">
-                            <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                                <h3 class="m-0">Latest</h3>
-                                <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
-                            </div>
-                        </div> -->
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/New_Images/Main_image_3.jpeg" style="object-fit: cover;">
-                                <div class="overlay position-relative bg-light">
-                                    <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>June 06, 2021</span>
-                                    </div>
-                                    <a class="h4" href="">WhatsApp hijack scam continues to spread</a>
-                                    <p class="m-0">Scammers are using an old trick to hijack WhatsApp accounts by posing as a friend.</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                <img src="img/New_Images/image_7.jpg" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>June 06, 2021</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Google sorry over ‘ugliest Indian language’ gaffe</a>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                <img src="img/New_Images/image_8.png" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>June 06, 2021</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Twitter releases 'Blue' subscription service</a>
-                                </div>
+                        <div class="col-12 ">
+                            <div class="section-title">
+                                <h4 class="m-0 text-uppercase font-weight-bold">Latest News</h4>
                             </div>
                         </div>
 
-
-
-
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/New_Images/Main_image_4.jpeg" style="object-fit: cover;">
-                                <div class="overlay position-relative bg-light">
-                                    <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">Entertainment</a>
-                                        <span class="px-1">/</span>
-                                        <span>June 06, 2021</span>
-                                    </div>
-                                    <a class="h4" href="">Bafta TV Awards 2021 red carpet in pictures</a>
-                                    <p class="m-0">Stars get together in person for the most prestigious British ceremony in the industry's calendar.</p>
-                                </div>
+                    </div>
+                    <div class="card float-left mr-2 mt-2" data-category="sports" style="width: 28rem;">
+                        <img class="card-img-top thumb-post" src="img/New_Images/image_1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Sports</a>
+                                <span class="px-1">/</span>
+                                <span>June 06, 2021</span>
                             </div>
-                            <div class="d-flex mb-3">
-                                <img src="img/New_Images/image_9.jpg" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Entertainment</a>
-                                        <span class="px-1">/</span>
-                                        <span>June 06, 2021</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Graham: 'I want everything I do to be difficult to watch'</a>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                <img src="img/New_Images/image_10.jpg" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Entertainment</a>
-                                        <span class="px-1">/</span>
-                                        <span>June 06, 2021</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">The show highlighting Iran's rich artistic streak</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="bg-light py-2 px-4 mb-3">
-                                <h3 class="m-0">News Categories</h3>
-                            </div>
-                            <div class="d-flex flex-wrap m-n1">
-                                <a href="index.html" class="btn btn-sm btn-outline-secondary m-1">Home</a>
-                                <a href="business.html" class="btn btn-sm btn-outline-secondary m-1">Business</a>
-                                <a href="politics.html" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
-                                <a href="technology.html" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
-                                <a href="entertainment.html" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
-                                <a href="covid-19.html" class="btn btn-sm btn-outline-secondary m-1">Covid 19</a>
-                                <a href="sports.html" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
-                                <a href="football.html" class="btn btn-sm btn-outline-secondary m-1">Football</a>
-                                <a href="basketball.html" class="btn btn-sm btn-outline-secondary m-1">Basketball</a>
-                                <a href="volleyball.html" class="btn btn-sm btn-outline-secondary m-1">Volleyball</a>
-                            </div>
+                                <a class="h4" href="">Burns falls in England pursuit of 273 to win</a>
+                                <p class="m-0">England need 273 in a minimum of 75 overs to win the first Test after New Zealand declare at lunch on the final day at Lord's.</p>
                         </div>
                     </div>
+                    <div class="card float-left mr-2 mt-2" data-category="sports" style="width: 28rem;">
+                        <img class="card-img-top thumb-post" src="img/New_Images/image_3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Sports</a>
+                                <span class="px-1">/</span>
+                                <span>June 06, 2021</span>
+                            </div>
+                            <a class="h4" href="">Federer could pull out of French Open championship</a>
+                            <p class="card-text">With victory in the final Nadal will secure his seventh French Open title [GETTY] ... the ground at rain-slicked Roland Garros, Nadal pulled out the point ...</p>
+                        </div>
+                    </div>
+                    <div class="card float-left mr-2 mt-2" data-category="politics" style="width: 28rem;">
+                        <img class="card-img-top thumb-post" src="img/Politics/Whistleblowers urge Biden administration to do more to vaccinate detained immigrant population.PNG" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Politics</a>
+                                <span class="px-1">/</span>
+                                <span>June 06, 2021</span>
+                            </div>
+                            <a class="h4" href="">Biden administration to do more to vaccinate detained immigrant
+                            </a>
+                            <p class="card-text">The 21-year-old is an exciting back-up option to
+                                stalwart Kieran Tierney Supporters of the COVID Memorial....</p>
+                        </div>
+                    </div>
+                    <div class="card float-left mr-2 mt-2" data-category="business" style="width: 28rem;">
+                        <img class="card-img-top thumb-post" src="img/New_Images/image_2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Business</a>
+                                <span class="px-1">/</span>
+                                <span>June 06, 2021</span>
+                            </div>
+                            <a class="h4" href="">Tax deal sets bar too low, campaigners say</a>
+                            <p class="m-0">G7 finance ministers have agreed to work together to create a "level playing field" on global taxation....</p>
+                        </div>
+                    </div>
+                    <div class="card float-left mr-2 mt-2" data-category="business" style="width: 28rem;">
+                        <img class="card-img-top thumb-post" src="img/New_Images/image_5.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Business</a>
+                                <span class="px-1">/</span>
+                                <span>June 06, 2021</span>
+                            </div>
+                            <a class="h4" href="">Facebook suspends Trump accounts for two years... </h5>
+                            </a>
+                            <p class="m-0">We are suspending his accounts for two years, effective from the date of the initial suspension on January 7 this year.” The company's ...</p>
+                        </div>
+                    </div>
+                    <div class="card float-left mr-2 mt-2" data-category="covid-19" style="width: 28rem;">
+                        <img class="card-img-top thumb-post" src="img/Covid 19/Fears for pregnant women, children as COVID engulfs Indonesia.PNG" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Covid-19</a>
+                                <span class="px-1">/</span>
+                                <span>June 06, 2021</span>
+                            </div>
+                            <a class="h4" href="">Fears for pregnant women, children as COVID engulfs Indonesia </h5>
+                            </a>
+                            <p class="m-0">Doctors urge acceleration of vaccinations for expectant women and children as Delta-fuelled...</p>
+                        </div>
+                    </div>
+                    <div class="card float-left mr-2 mt-2" data-category="technology" style="width: 28rem;">
+                        <img class="card-img-top thumb-post" src="img/New_Images/Main_image_3.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>June 06, 2021</span>
+                            </div>
+                            <a class="h4" href="">WhatsApp hijack scam continues to spread</a>
+                            <p class="m-0">Scammers are using an old trick to hijack WhatsApp accounts by posing as a friend.....</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card float-left mr-2 mt-2" data-category="technology" style="width: 28rem;">
+                        <img class="card-img-top thumb-post" src="img/New_Images/image_7.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>June 06, 2021</span>
+                            </div>
+                            <a class="h4" href="">Google sorry over ‘ugliest Indian language’ gaffe</a>
+                            <p class="m-0">But do not feel too sorry for Google, its revenue in the first six months of ....</p>
+                        </div>
+                    </div>
+                    <div class="card float-left mr-2 mt-2" data-category="technology" style="width: 28rem;">
+                        <img class="card-img-top thumb-post" src="img/New_Images/image_8.png" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>June 06, 2021</span>
+                            </div>
+                            <a class="h4" href="">Twitter releases 'Blue' subscription service</a>
+                            <p class="m-0">The Federal Government has suspended, indefinitely, the operations of the microblogging and social networking service ....</p>
+                        </div>
+                    </div>
+
+                    <div class="card float-left mr-2 mt-2" data-category="entertainment" style="width: 28rem;">
+                        <img class="card-img-top thumb-post" src="img/New_Images/Main_image_4.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="mb-2" style="font-size: 14px;">
+                                <a href="">Entertainment</a>
+                                <span class="px-1">/</span>
+                                <span>June 06, 2021</span>
+                            </div>
+                            <a class="h4" href="">Bafta TV Awards 2021 red carpet in pictures</a>
+                                    <p class="m-0">Stars get together in person for the most prestigious British ceremony in the industry's calendar Many TV and film portrayals of Muslims often fail the...</p>
+                        </div>
+                    </div>
+
                 </div>
-                
-                
-                    <!-- Social Follow End -->
 
-                    <!-- Newsletter Start -->
 
-                  
+                
+                <div class="col-lg-2">
+                    <!-- Tranding News Start -->
+                    <div class="mb-3">
+                        <div class="section-title mb-0">
+                            <h5 class=" text-uppercase font-weight-bold"> News Filters</h4>
+                            <div >
+
+                                <!-- Filter CheckBox -->
+                              
+                                <div class="form-check" style="padding: 5px;">
+                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="business" id="hidediv"> Business</label>
+                                </div>
+                                <div class="form-check" style="padding: 5px;">
+                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="politics"> Politics</label>
+                                </div>
+                                <div class="form-check" style="padding: 5px;">
+                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="technology"> Technology</label>
+                                </div>
+                                <div class="form-check" style="padding: 5px;">
+                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="entertainment">
+                                            Entertainment</label>
+                                </div>
+                                <div class="form-check" style="padding: 5px;">
+                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="covid-19"> Covid-19</label>
+                                </div>
+                                <div class="form-check" style="padding: 5px;">
+                                    <label style="font-size: large;"><input style="width: 20px; height: 20px;" class="cardCheckBox chkbx" type="checkbox" value="sports" > Sports</label>
+                                </div>
+                                
+                                <!--End Checkbox Filter-->
+                            </div>
+                        </div>
+
+
+
+                    
+                    </div>
+                    <!-- Popular News End -->
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="bg-light py-2 px-4 mb-3" style="margin-top: 25px;">
+                    <h3 class="m-0">News Categories</h3>
+                </div>
+                <div class="d-flex flex-wrap m-n1">
+                    <a href="index.html" class="btn btn-sm btn-outline-secondary m-1">Home</a>
+                    <a href="business.html" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                    <a href="politics.html" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                    <a href="technology.html" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                    <a href="entertainment.html" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                    <a href="covid-19.html" class="btn btn-sm btn-outline-secondary m-1">Covid 19</a>
+                    <a href="sports.html" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                    <a href="football.html" class="btn btn-sm btn-outline-secondary m-1">Football</a>
+                    <a href="basketball.html" class="btn btn-sm btn-outline-secondary m-1">Basketball</a>
+                    <a href="volleyball.html" class="btn btn-sm btn-outline-secondary m-1">Volleyball</a>
+                </div>
             </div>
         </div>
+  
     </div>
+
+
+
     </div>
     <!-- News With Sidebar End -->
 
@@ -383,6 +392,20 @@
         </p>
     </div>
     <!-- Footer End -->
+    <script>
+        const $cards = $("[data-category]");
+        const $cardsCkb = $(".cardCheckBox");
+        $cardsCkb.on("change", function () {
+            const checkedArr = $cardsCkb.filter(":checked").get().map(el => el.value);
+            if (!checkedArr.length) return
+            $cards.removeClass("is-hidden");
+            $cards.each(function () {
+                const category = $(this).data("category");
+                $(this).toggleClass("is-hidden", !checkedArr.includes(category));
+            });
+        });
+
+    </script>
 
 
     <!-- Back to Top -->
@@ -390,7 +413,7 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
